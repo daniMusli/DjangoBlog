@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+      {% for birpost in posts %}
+         <div class="container">
+            <div class="row">
+              <div class=" col-md-6 col-md-offset-3">
+                <div class="thumbnail">
+                  <div class="caption">
+                      {% if birpost.image %}
+                         <img src="{{ birpost.image.url }}" class ="img-responsive">
+                      {% endif %}
+                      <h3>{{birpost.title}} <small>{{birpost.date|timesince}} önce</small></h3>
+                      <h4>Yazar: {{birpost.user}}</h4>
+                      <p>{{birpost.content|safe|linebreaks|truncatechars:50}}</p>
+                      <p><a href="{{ birpost.get_absolute_url }}" class="btn btn-primary" role="button">incele</a>
+                          {% if request.user.is_authenticated %}
+                            <a href="{{ birpost.get_update_url }}" class="btn btn-default" role="button">Guncell</a>
+                            <a href="{{ birpost.get_delete_url }}" class="btn btn-danger" role="button">Sil</a>
+                          {% endif %}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      {% endfor %}
+
+
+        <div class="row">
+            <div class=" col-md-6 col-md-offset-3">
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if posts.has_previous %}
+                            <a href="?page={{ posts.previous_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif%}">previous</a>
+                        {% endif %}
+
+                        <span class="current">
+                            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+                        </span>
+
+                        {% if posts.has_next %}
+                            <a href="?page={{ posts.next_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif%}">next</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

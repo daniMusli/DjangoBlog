@@ -1,0 +1,95 @@
+body{
+   padding-top:70px;
+}
+
+
+.carousel-caption{
+	bottom:60px;
+    background-color:rgba(3,3,3,0.2);
+	padding-right:20px;
+	padding-left:20px;
+
+ }
+ /**صورة السلايد اد ماكبرت الشاشة وصغرتا رح تتم معبيتا**/
+ .img-responsive, .thumbnail > img,
+ .thumbnail a > img,
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img{
+	 width:100%;
+ }
+ /*Normal indicators*/
+ .carousel-indicators{
+	bottom:0px;
+ }
+
+.carousel-indicators li{
+	border:1px solid #EEE;
+}
+
+
+.our-Team{
+	background:url("image/team.jpg") no-repeat center center fixed;
+    min-height:600px;
+	 /**الصورة اد ماكبرت الشاشة وصغرتا رح تتم معبية الشاشة**/
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.our-Team .team{
+	background:rgba(2,2,2,0.6);
+	min-height:600px;
+	color:#FFF;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.our-Team h1{
+	margin-bottom:40px;
+}
+
+
+
+
+.footer{
+	background-color:#111;
+	color:#AAA;
+	padding-top:30px;
+}
+.footer h3{
+	margin-bottom:30px;
+}
+.footer .three-columns{
+	overflow:auto;
+}
+.footer .three-columns li{
+	width:33.3333%;
+	float:left;
+	padding:5px;
+
+}
+.footer .social-photo li{
+	float:left;
+	margin-right:4px;
+	opacity:0.6;
+	filter:alpha(opacity=70);
+
+	-webkit-transition:all 0.7s ease-in-out;
+	-moz-transition:all 0.7s ease-in-out;
+	-o-transition:all 0.7s ease-in-out;
+	transition:all 0.7s ease-in-out;
+}
+.footer .social-photo li:hover{
+	opacity:1;
+
+}
+.footer .img-thumbnail{
+	background:rgba(0,0,0,0.3);
+	border:1px solid #444;
+	margin-bottom:5px;
+}
+.copyright{
+	background:#333;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:18px;
+}

@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% block title %}Anasayfa-{{block.super}}{% endblock %}
+{% block body %}
+
+
+<div id="mySlide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+		  <ol class="carousel-indicators hidden-xs" >
+			<li data-target="#mySlide" data-slide-to="0" class="active"></li>
+			<li data-target="#mySlide" data-slide-to="1"></li>
+			<li data-target="#mySlide" data-slide-to="2"></li>
+			<li data-target="#mySlide" data-slide-to="3"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+
+			<div class="item active">
+			  <img src="static/image/01.jpg" alt="...">
+			  <div class="carousel-caption">
+				<h1>Programming</h1>
+				<p class="lead">The carousel component is generally not compliant with accessibility standards.
+				                If you need to be compliant, please consider other options for presenting your content.</p>
+				<div class="btn btn-primary">Read More</div>
+				<div class="btn btn-danger">Buy Now</div>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="static/image/02.jpg" alt="...">
+			  <div class="carousel-caption">
+				<h1>Web Design</h1>
+				<p class="lead">The carousel component is generally not compliant with accessibility standards.
+				                If you need to be compliant, please consider other options for presenting your content.</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="static/image/03.jpg" alt="...">
+			  <div class="carousel-caption">
+				<h1>Desktop</h1>
+				<p class="lead">The carousel component is generally not compliant with accessibility standards.
+				                If you need to be compliant, please consider other options for presenting your content.</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="static/image/04.jpg" alt="...">
+			  <div class="carousel-caption">
+				<h1>Web Hosting</h1>
+				<p class="lead">The carousel component is generally not compliant with accessibility standards.
+				                If you need to be compliant, please consider other options for presenting your content.</p>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#mySlide" role="button" data-slide="prev">
+
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#mySlide" role="button" data-slide="next">
+
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+
+
+        <section class="our-Team text-center">
+		    <div class="team">
+			    <div class="container">
+				    <h1> Meet Our Awesome Team </h1>
+					<div class="row">
+					    <div class="col-lg-3 col-md-6">
+						    <div class="person">
+							    <img class="img-circle" src="static/image/steve.jpg" alt="steve">
+								<h2>Steve Jobs</h2>
+								<p>This Is Amazing Hacker Woman With A Much Knowledge In Hacking Systems</p>
+								<i class="fa fa-google-plus-square fa-lg">&nbsp;</i>
+								<i class="fa fa-facebook-square fa-lg">&nbsp;</i>
+								<i class="fa fa-twitter-square fa-lg">&nbsp;</i>
+								<i class="fa fa-youtube-square fa-lg">&nbsp;</i>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+						    <div class="person">
+							    <img class="img-circle" src="static/image/leah.jpg" alt="leah">
+								<h2>Leah Culver</h2>
+								<p>This Is Amazing Hacker Woman With A Much Knowledge In Hacking Systems</p>
+								<i class="fa fa-google-plus-square fa-lg"></i>
+								<i class="fa fa-facebook-square fa-lg"></i>
+								<i class="fa fa-twitter-square fa-lg"></i>
+								<i class="fa fa-youtube-square fa-lg"></i>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+						    <div class="person">
+							    <img class="img-circle" src="static/image/marissa.jpg" alt="marissa">
+								<h2>Marissa Mayer</h2>
+								<p>This Is Amazing Hacker Woman With A Much Knowledge In Hacking Systems</p>
+								<i class="fa fa-google-plus-square fa-lg"></i>
+								<i class="fa fa-facebook-square fa-lg"></i>
+								<i class="fa fa-twitter-square fa-lg"></i>
+								<i class="fa fa-youtube-square fa-lg"></i>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+						    <div class="person">
+							    <img class="img-circle" src="static/image/chris.jpg" alt="chris">
+								<h2>Chris Coyier</h2>
+								<p>This Is Chris Coyier The Founder Of The Amazing Website Css-Tricks</p>
+								<i class="fa fa-google-plus fa-lg">&nbsp;</i>
+								<i class="fa fa-facebook fa-lg">&nbsp;</i>
+								<i class="fa fa-twitter fa-lg">&nbsp;</i>
+								<i class="fa fa-youtube fa-lg">&nbsp;</i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="footer">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-md-4">
+					    <h3>Sitemap</h3>
+						<ul class="list-unstyled three-columns">
+						   <li>Home</li>
+						   <li>Code</li>
+						   <li>Solutions</li>
+						   <li>About</li>
+						   <li>Design</li>
+						   <li>Sitemap</li>
+						   <li>Company</li>
+						   <li>Host</li>
+						   <li>Contact</li>
+						</ul>
+						<ul class="list-unstyled social-photo">
+						   <li><img src="static/image/social-bookmarks/facebook.png" alt="Facebook"></li>
+						   <li><img src="static/image/social-bookmarks/pinterest.png" alt="pinterest"></li>
+						   <li><img src="static/image/social-bookmarks/rss.png" alt="rss"></li>
+						   <li><img src="static/image/social-bookmarks/email.png" alt="email"></li>
+						   <li><img src="static/image/social-bookmarks/gplus.png" alt="gplus"></li>
+						   <li><img src="static/image/social-bookmarks/twitter.png" alt="twitter"></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+					    <h3>Latest Articles</h3>
+						<div class="media">
+						    <a class="pull-left" href="#">
+							    <img class="media-object" src="static/image/articles/01.jpg" alt=""/>
+							</a>
+							<div class="media-body">
+						        <h4 class="media-heading">programming</h4>
+							    <p>This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0</p>
+						    </div>
+
+							<a class="pull-left" href="#">
+							    <img class="media-object" src="static/image/articles/02.jpg" alt=""/>
+							</a>
+							<div class="media-body">
+						        <h4 class="media-heading">Coding</h4>
+							    <p>This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0</p>
+						    </div>
+
+							<a class="pull-left" href="#">
+							    <img class="media-object" src="static/image/articles/03.jpg" alt=""/>
+							</a>
+							<div class="media-body">
+						        <h4 class="media-heading">Web Design</h4>
+							    <p>This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0</p>
+						    </div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+					    <h3>Our Awesome Work</h3>
+						<img class="img-thumbnail"src="static/image/work/01.jpg" alt="">
+						<img class="img-thumbnail"src="static/image/work/02.jpg" alt="">
+						<img class="img-thumbnail"src="static/image/work/03.jpg" alt="">
+						<img class="img-thumbnail"src="static/image/work/04.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">
+			    Copyright © 2014 <span>Yazılım staj</span> .Inc
+			</div>
+		</section>
+
+{% endblock %}
